@@ -1,0 +1,324 @@
+/*nombro variables de colores*/
+
+       
+:root{
+  --white: #FFFFFF;
+  --black: #000000;
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #f7f7f7;
+  --hospital-green: #ACD9B2;
+  --sm:20px;
+  --md: 18px;
+  --lg: 20px;
+}
+
+body{
+  font-family: 'Quicksand', sans-serif;
+}
+ 
+
+/*........................container de contraseñas....................*/
+body{
+  margin: 0;
+}
+
+
+/******************************************************************************************/
+/******************************************************************************************/
+/******************************************************************************************/
+/******************************************************************************************/
+/******************************************************************************************/
+/******************************************************************************************/
+
+/*la lista y el correo con el carrito quedan de forma horizontal*/
+.nav-escritorio{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid var(--very-light-pink);
+
+}
+
+/*...............section header...........*/
+.menu-escritorio{
+  display: none;/*desaparece el icono del menu*/
+ 
+}
+
+
+.navbar-left-escritorio {
+  display: flex;
+  margin-left: 12px;
+}
+
+
+
+/*tamaño del logo yarsale*/
+.logo-escritorio{
+  width: 20%;
+}
+
+
+
+
+
+.navbar-left-escritorio ul
+{
+  list-style: none;/*quito los puntos de la lista*/
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 700px;
+  
+}
+
+
+
+
+
+.navbar-right-escritorio ul{
+  display: flex;
+  margin-left: 12px;
+}
+
+
+
+.navbar-left-escritorio ul li a,
+.navbar-right-escritorio ul li a {
+  text-decoration: none;/*quito las lienas de la parte de abajo de la lista*/
+  color: black;
+  border: 1px solid var(--white);
+  padding: 8px;
+  border-radius: 8px;
+ 
+
+}
+
+
+
+.navbar-left-escritorio ul li a :hover,
+.navbar-right-escritorio ul li a :hover {
+  
+  border: 1px solid var(--hospital-green);
+  color: var(--hospital-green)
+
+}
+
+/*email*/
+.navbar-email-escritorio{
+  color: black;
+  font-size: var(--sm);
+  list-style: none;/*quito los puntos de la lista*/
+}
+
+
+
+.navbar-shopping-cart-escritorio{
+  position: relative;
+  list-style: none;/*quito los puntos de la lista*/
+  display: flex;
+}
+
+.navbar-shopping-cart-escritorio div{
+  width: 16px;
+  height: 16px;
+  background-color: var(--hospital-green);
+  border-radius: 50%;
+  font-size: var(--sm);
+  font-weight: bold;
+  position: absolute;
+  top: -6px;
+  right: -3px;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.container-foto-principal {
+  position: relative;
+ 
+}
+
+.imagen-principal {
+  width: 100vw;
+  height: 100vh;
+  image-resolution: 300dpi;
+ 
+}
+
+h1 {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 5em;
+ 
+}
+
+.lorem {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.title-imagenes{
+  text-align: center;
+  color: black;
+  font-size: 2em;
+}
+
+
+.parrafo-imagenes p{
+  text-align: center;
+  color: black;
+  font-size: 2em;
+  background-color: #FFFFFF;
+  margin-top: 70px;
+}
+/******************************************************************************************/
+/******************************************************************************************/
+/******************************************************************************************/
+/******************************************************************************************/
+/******************************************************************************************/
+/******************************************************************************************/
+
+
+
+
+
+/*...................section inicio...............*/
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 26px;/*separo las cards*/
+  place-content: center;/*centramos todo el contenido al centro de la pantalla*/
+}
+
+.product-card {
+  width: 240px;
+}
+
+.product-card img{
+  width: 240px;
+  height: 240px;
+  border-radius: 20px;
+  object-fit: cover;/*la imagen va mantener su tamaño*/
+}
+
+
+.product-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+
+}
+
+.product-info figure {
+ margin: 0;
+
+}
+
+
+.product-info figure img{
+  width: 35px;
+  height: 35px;
+
+} 
+
+
+.product-info div p:nth-child(1){
+  font-weight: bold;
+  font-size: var(--md);
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.product-info div p:nth-child(2){
+  
+  font-size: var(--sm);
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--very-light-pink);
+}
+
+
+
+
+
+
+.location {
+  color: #E86424;
+}
+
+.info-section h2{
+  text-align: center;
+  font-size: 2rem;
+  color: blue;
+}
+
+.video{
+  width: 900px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+
+
+
+footer {
+  background-color: #FA9500;
+  width: auto;
+  height: auto;
+  color: white;
+  padding: 40px;
+}
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 40px;
+ 
+}/*# sourceMappingURL=main.css.map */
+
+.social-media img{
+  width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
